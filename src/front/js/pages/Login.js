@@ -16,6 +16,10 @@ const Login = () => {
         });
     };
 
+    const handleSignupRedirect = () => {
+        navigate('/signup');
+    };
+
 	return (
         <div className="form-container">
             <form onSubmit={handleSubmit}>
@@ -43,6 +47,10 @@ const Login = () => {
 
                 <button type="submit">Ingresar</button>
             </form>
+            <div className="signup-redirect">
+                <p>¿No tienes una cuenta?</p>
+                <button onClick={handleSignupRedirect}>Registrarse</button>
+            </div>
         </div>
     );
 };

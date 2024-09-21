@@ -15,7 +15,7 @@ const Private = () => {
     useEffect(() => {
         const token = localStorage.getItem("jwt-token");
         if (!token) {
-            navigate('/login');
+            navigate('/');
         } else {
             console.log("Token válido, usuario autenticado");
         }

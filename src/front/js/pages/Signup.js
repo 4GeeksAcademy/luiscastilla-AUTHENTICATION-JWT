@@ -12,7 +12,7 @@ const Signup = () => {
 	const handleSubmit = (e) => {
         e.preventDefault();
         actions.crear_usuario(correo, contrasena).then(() => {
-            navigate('/login');
+            navigate('/');
         });
     };
 

@@ -16,7 +16,7 @@ const Layout = () => {
             <BrowserRouter basename={basename}>
                 <Routes>
                     <Route element={<Login />} path="/" />
-                    <Route element={<Signup />} path="/Signup" />
+                    <Route element={<Signup />} path="/signup" />
                     <Route element={<Private />} path="/private" />
                     <Route element={<h1>Not found!</h1>} path="*" />
                 </Routes>

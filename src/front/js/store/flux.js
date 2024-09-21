@@ -5,14 +5,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 			usuarios: []
 		},
 		actions: {
-			crear_usuario: async (email, contrasena) => {
+			crear_usuario: async (email, password) => {
 				try {
                     const res = await fetch(`${process.env.BACKEND_URL}/api/signup`,{
 						method: 'POST',
 						headers: {
 							'Content-Type': 'application/json',
 						},
-						body: JSON.stringify({ email, contrasena }),
+						body: JSON.stringify({ email, password }),
 					});
                     if (!res.ok) {
 						throw new Error("Error al registrar usuario");
